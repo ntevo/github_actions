@@ -1,4 +1,4 @@
-name: Shell commands
+oname: Shell commands
 on: [push]
 jobs:
   run-shell-command:
@@ -8,7 +8,7 @@ jobs:
         os: [ubuntu-latest, ubuntu-20.04]
     steps:
       - name: echo a string
-        run: echo "Hello world"
+        run: echoo "Hello world"
       - name: multiline script
         run: |
           python3 -V
